@@ -4,7 +4,8 @@ Shell script to clean my Mac in 2 commands (1 if already installed!)
 
 ## Setup / Installation
 
-Clone this repository: `...`
+Clone this repository: `https://github.com/adamalston/Clean-My-Mac.git`
+
 Run: `sh clean_my_mac.sh`
 
 ## How does it work
