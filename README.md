@@ -2,13 +2,17 @@
 
 Shell script to clean my Mac in 2 commands (1 if already installed!)
 
-### Setup / Installation
+Cleaning macOS can improve system **performance**.  With a sizeable amount of data in the system's cache, speed and performance can be impacted negatively.
+
+Another reason to clean macOS is to ensure **privacy**. Generally, caches contain private information. Clearing this information reduces the risk of it getting out if your system is compromised in any context.
+
+## Setup / Installation
 
 Clone this repository: `https://github.com/adamalston/Clean-My-Mac.git`
 
 Run: `sh clean_my_mac.sh`
 
-### How does it work
+## How does it work
 
 This script clears data such as outdated caches and logs from macOS.
 
