@@ -29,3 +29,5 @@ sudo rm -rf /var/log/*
 # private system caches
 sudo rm -rf /private/var/folders/*
 ```
+
+Any of these instructions can be disabled by simply adding a hash mark (`#`: shell comment syntax) to the beginning of the line that the instruction is on.
