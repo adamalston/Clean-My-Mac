@@ -2,13 +2,13 @@
 
 Shell script to clean my Mac in 2 commands (1 if already installed!)
 
-## Setup / Installation
+### Setup / Installation
 
 Clone this repository: `https://github.com/adamalston/Clean-My-Mac.git`
 
 Run: `sh clean_my_mac.sh`
 
-## How does it work
+### How does it work
 
 This script clears data such as outdated caches and logs from macOS.
 
