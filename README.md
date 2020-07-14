@@ -14,4 +14,4 @@ Clone this repository: `https://github.com/adamalston/Clean-My-Mac.git`
 
 Run: `sh clean-my-mac.sh`
 
-**Note:** Any of the instructions in the script can be disabled by simply adding a hash mark (`#`: shell comment syntax) to the beginning of the line that the instruction is on.
+**Note:** Any of the instructions in the script can be disabled by adding a hash mark (`#`: shell comment syntax) to the beginning of the line that the instruction is on.
