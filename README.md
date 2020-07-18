@@ -6,7 +6,7 @@ Cleaning the OS can improve system **performance**. With a sizeable amount of da
 
 Another reason to clean the OS is to ensure **privacy**. Generally, caches contain private information. Clearing this information reduces the risk of it getting out if your system is compromised in any context.
 
-The [`clean-my-mac.sh`](clean-my-mac.sh) script clears data such as outdated caches and logs from macOS.
+The `clean-my-mac.sh` script clears data such as outdated caches and logs from macOS.
 
 ## Setup / Installation
 
