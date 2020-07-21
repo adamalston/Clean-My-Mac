@@ -1,28 +1,28 @@
 #!/bin/bash
 
 # user caches
-echo "Clear user cache files"
+echo "Clearing user cache files"
 rm -rfv ~/Library/Caches/* > /dev/null 2>&1
 
 # user logs
-echo "Clear user log files"
+echo "Clearing user log files"
 rm -rfv ~/Library/logs/* > /dev/null 2>&1
 
 # system caches
-echo "Clear system cache files"
+echo "Clearing system cache files"
 sudo rm -rfv /Library/Caches/* > /dev/null 2>&1
 
 # system logs
-echo "Clear system log files"
+echo "Clearing system log files"
 sudo rm -rfv /Library/logs/* > /dev/null 2>&1
 sudo rm -rfv /var/log/* > /dev/null 2>&1
 
 # private system caches
-echo "Clear quicklook files"
+echo "Clearing quicklook files"
 sudo rm -rfv /private/var/folders/* > /dev/null 2>&1
 
 # trash
-echo "Empty trash"
+echo "Emptying trash"
 sudo rm -rfv /Volumes/*/.Trashes > /dev/null 2>&1
 sudo rm -rfv ~/.Trash  > /dev/null 2>&1
 
