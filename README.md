@@ -10,8 +10,32 @@ The `clean-my-mac.sh` script clears data such as outdated caches and logs from m
 
 ## Setup / Installation
 
-Clone this repository: `https://github.com/adamalston/Clean-My-Mac.git`
+1. Clone this repository: `git clone https://github.com/adamalston/Clean-My-Mac.git`
 
-Run: `sh clean-my-mac.sh`
+2. Run: `sh clean-my-mac.sh`
 
 **Note:** Any of the instructions in the script can be disabled by adding a hash mark (`#`: shell comment syntax) to the beginning of the line that the instruction is on.
+
+## How it works
+
+Instruction: `rm -rfv /path/to/file > /dev/null 2>&1`
+
+`rm` is for remove
+
+`-rfv` is three commands:
+
+-   `-r`: recursively remove directories and their contents, folders inside will also be removed
+-   `-f`: force, ignore nonexistent files, never prompt
+-   `-v`: verbose, show what is happening
+
+`>` is for redirect
+
+`/dev/null` is a black hole where any data sent, will be discarded
+
+`2` is the file descriptor for Standard Error `stderr`
+
+`&` is the symbol for file descriptor (without it, the following `1` would be considered a filename)
+
+`1` is the file descriptor for Standard Output `stdout`
+
+Therefore `> /dev/null 2>&1` redirects the output of your program to `/dev/null` - including both the `stderr` and `stdout`.
