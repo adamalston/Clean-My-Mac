@@ -26,7 +26,7 @@ echo "Emptying trash"
 sudo rm -rfv /Volumes/*/.Trashes > /dev/null 2>&1
 sudo rm -rfv ~/.Trash  > /dev/null 2>&1
 
-echo "Remove outdated version(s) of Homebrew"
+echo "Removing outdated version(s) of Homebrew"
 brew cleanup
 
-echo "Brand new again!"
+echo "Finished!"
