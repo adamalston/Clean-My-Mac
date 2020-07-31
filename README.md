@@ -32,10 +32,10 @@ Instruction: `rm -rfv /path/to/file > /dev/null 2>&1`
 
 `/dev/null` is a black hole where any data sent, will be discarded
 
-`2` is the file descriptor for Standard Error `stderr`
+`2` is the file descriptor for Standard Error (`stderr`)
 
 `&` is the symbol for file descriptor (without it, the following `1` would be considered a filename)
 
-`1` is the file descriptor for Standard Output `stdout`
+`1` is the file descriptor for Standard Output (`stdout`)
 
-Therefore `> /dev/null 2>&1` redirects the output of your program to `/dev/null` - including both the `stderr` and `stdout`.
+Therefore `> /dev/null 2>&1` redirects the output of your program to `/dev/null` - including both the `stderr` and `stdout`
