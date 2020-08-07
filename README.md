@@ -4,7 +4,7 @@ Shell script to clean macOS using 2 commands (1 if already installed).
 
 Cleaning the OS can improve system **performance**. With a sizeable amount of data in the system's cache - a lot of which is likely outdated - speed and performance can be impacted.
 
-Another reason to clean the OS is to ensure **privacy**. Generally, caches contain private information. Clearing this information reduces the risk of it getting out if your system is compromised in any context.
+Another reason to clean the OS is to ensure **privacy**. Generally, caches contain private information. Clearing this information reduces the risk of it getting out if the system is compromised in any context.
 
 The `clean-my-mac.sh` script clears data such as outdated caches and logs from macOS.
 
@@ -20,22 +20,15 @@ The `clean-my-mac.sh` script clears data such as outdated caches and logs from m
 
 Instruction: `rm -rfv /path/to/file > /dev/null 2>&1`
 
-`rm` is for remove
+-   `rm` is for remove
+-   `-rfv` is three commands:
+    -   `-r`: recursive, remove directories and their contents, folders inside will also be removed
+    -   `-f`: force, ignore nonexistent files, never prompt
+    -   `-v`: verbose, show what is happening
+-   `>` is for redirect
+-   `/dev/null` is a black hole where any data sent, will be discarded
+-   `2` is the file descriptor for Standard Error (`stderr`)
+-   `&` is the symbol for file descriptor (without it, the following `1` would be considered a filename)
+-   `1` is the file descriptor for Standard Output (`stdout`)
 
-`-rfv` is three commands:
-
--   `-r`: recursively remove directories and their contents, folders inside will also be removed
--   `-f`: force, ignore nonexistent files, never prompt
--   `-v`: verbose, show what is happening
-
-`>` is for redirect
-
-`/dev/null` is a black hole where any data sent, will be discarded
-
-`2` is the file descriptor for Standard Error (`stderr`)
-
-`&` is the symbol for file descriptor (without it, the following `1` would be considered a filename)
-
-`1` is the file descriptor for Standard Output (`stdout`)
-
-Therefore `> /dev/null 2>&1` redirects the output of your program to `/dev/null` - including both the `stderr` and `stdout`
+Therefore `> /dev/null 2>&1` redirects the output of the program to `/dev/null` - including both the `stderr` and `stdout`
